@@ -17,3 +17,6 @@ vault
 
 Istio
 API gateway
+
+
+Define a build server remotely
