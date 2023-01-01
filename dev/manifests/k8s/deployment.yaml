@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: modern-dev
+  labels:
+    app: modern-dev
+spec:
+  ports:
+    - port: 5000
+      protocol: TCP
+  clusterIP: None
+  selector:
+    app: modern-dev
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: modern-dev
+  labels:
+    app: modern-dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: modern-dev
+  template:
+    metadata:
+      labels:
+        app: modern-dev
+    spec:
+      containers:
+        - name: modern-dev
+          image: memogarcia10/modern-dev

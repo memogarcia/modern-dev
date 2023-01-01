@@ -1,0 +1,12 @@
+apiVersion: skaffold/v4beta1
+kind: Config
+metadata:
+  name: modern-dev
+build:
+  artifacts:
+    - image: memogarcia10/modern-dev
+      docker:
+        dockerfile: Dockerfile
+manifests:
+  rawYaml:
+    - dev/manifests/k8s/deployment.yaml

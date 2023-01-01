@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "modern-dev"
+version = "0.1.0"
+description = ""
+authors = ["Guillermo Ramirez Garcia <memo@hpe.com>"]
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.23.0"
+fastapi = "^0.88.0"
+uvicorn = "^0.20.0"
+uvloop = "^0.17.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+flake8 = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

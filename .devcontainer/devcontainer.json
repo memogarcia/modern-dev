@@ -1,0 +1,20 @@
+{
+    "build": {
+        "dockerfile": "../Dockerfile"
+    },
+    // "dockerComposeFile": "../docker-compose.yml",
+    // "service": "app",
+    // "workspaceFolder": "/workspaces/modern-dev",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-python.black-formatter",
+                "ms-python.isort",
+                "redhat.vscode-yaml"
+            ]
+        }
+    }
+    // "postCreateCommand": "bash scripts/install-dev-tools.sh"
+}

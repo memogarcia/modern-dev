@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: modern
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: modern
+  template:
+    metadata:
+      labels:
+        app: modern
+    spec:
+      containers:
+        - name: modern
+          image: memogarcia10/modern-dev:amd
+          ports:
+            - containerPort: 80
