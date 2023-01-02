@@ -8,7 +8,7 @@ COPY poetry.lock pyproject.toml /workspaces/modern-dev/
 
 RUN poetry install
 
-FROM python:3.11-slim
+FROM python:3.11-alpine
 
 WORKDIR /workspaces/modern-dev/src
 
