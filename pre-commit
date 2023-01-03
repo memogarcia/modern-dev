@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Running black checks"
+black --check src/ --quiet
+
+echo "Running pyright static type checks"
+pyright --project src/ > /dev/null

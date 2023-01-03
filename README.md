@@ -20,3 +20,6 @@ API gateway
 
 
 Define a build server remotely
+
+Add `PyOxidizer`
+Add `PyRight` - already installed in `PyLance`
