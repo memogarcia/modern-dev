@@ -1,25 +1,17 @@
-# Modern dev
+# Modern Dev
 
-This is an example on how to use modern dev tools to build a modern application.
+Welcome to Modern Dev stack for Python.
 
-Seems that most of the time is spent on the ops side of things, so I'm trying to automate as much as possible.
+If you are new to the project, our [Quick Start]() and [FAQs]() are great places to being. If you can't find an answer, [Ask in the Slack channel]().
 
-The developer experience should be as transparent as possible, they should only need to clone and start working.
+You can access our documentation [here](github.com/modern-dev/docs).
 
-## Stack
+## About Modern Dev
 
-skaffold
-aws container registry
-EKS cluster
-github actions matrix workflow
-vault
+Modern Dev is a repository aim to quickstart the development of python application using modern best practices and help you by providing building blocks to deploy your application in cloud environments and getting fast feedback as soon as possible.
 
+## Contributing
 
-Istio
-API gateway
+This document will help you to [create your first PR]()
 
-
-Define a build server remotely
-
-Add `PyOxidizer`
-Add `PyRight` - already installed in `PyLance`
+Thank you!

@@ -4,4 +4,7 @@ echo "Running black checks"
 black --check src/ --quiet
 
 echo "Running pyright static type checks"
-pyright --project src/ > /dev/null
+pyright --project src/
+
+echo "Running pytest"
+pytest --quiet

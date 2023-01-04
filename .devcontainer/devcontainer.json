@@ -1,20 +1,22 @@
 {
-    "build": {
-        "dockerfile": "../Dockerfile"
-    },
-    // "dockerComposeFile": "../docker-compose.yml",
-    // "service": "app",
-    // "workspaceFolder": "/workspaces/modern-dev",
+    // "build": {
+    //     "dockerfile": "Dockerfile"
+    // },
+    "image": "python:3.11",
     "customizations": {
         "vscode": {
             "extensions": [
                 "ms-python.python",
                 "ms-python.vscode-pylance",
                 "ms-python.black-formatter",
-                "ms-python.isort",
+                // "ms-python.isort",
                 "redhat.vscode-yaml"
             ]
         }
-    }
-    // "postCreateCommand": "bash scripts/install-dev-tools.sh"
+    },
+    "postCreateCommand": "bash scripts/install-dev-tools.sh",
+    "postStartCommand": "bash scripts/configure-dev-env.sh",
+    "forwardPorts": [
+        5000
+    ]
 }
